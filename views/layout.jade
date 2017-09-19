@@ -1,0 +1,67 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    .container
+      .navbar.navbar-default
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') BrandIO
+        .navbar-collapse.collapse
+          //- ul.nav.navbar-nav
+          //-   li.active
+          //-     a(href='#') Link
+          //-   li
+          //-     a(href='#') Link
+          //-   li
+          //-     a(href='#') Link
+          //-   li.dropdown
+          //-     a.dropdown-toggle(href='#', data-toggle='dropdown')
+          //-       | Dropdown
+          //-       b.caret
+          //-     ul.dropdown-menu
+          //-       li
+          //-         a(href='#') Action
+          //-       li
+          //-         a(href='#') Another action
+          //-       li
+          //-         a(href='#') Something else here
+          //-       li.divider
+          //-       li.dropdown-header Nav header
+          //-       li
+          //-         a(href='#') Separated link
+          //-       li
+          //-         a(href='#') One more separated link
+          ul.nav.navbar-nav.navbar-right
+            //- li.active
+            //-   a(href='./') Default
+            //- li
+            //-   a(href='../navbar-static-top/') Static top
+            li
+              a#btn-about(data-toggle="modal" href="#about-modal") About us
+                
+      block content
+
+    #about-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            h4.modal-title About Us
+          .modal-body
+            | We are dash, we build thing fast.
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/d3.min.js')
+    script(src='/javascripts/application.js')
+    script(src='/javascripts/draw.js')

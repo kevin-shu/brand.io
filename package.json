@@ -1,0 +1,17 @@
+{
+  "name": "BrandIO",
+  "description": "Let's smell your BRAND~",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "axon": "1.0.0",
+    "jade": "*",
+    "async": "0.2.5",
+    "stanford-simple-nlp": "*",
+    "java": "*"
+  }
+}
